@@ -48,11 +48,10 @@ if uploaded_file is not None:
     st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - Fahmy</h1>", unsafe_allow_html=True)
     st.dataframe(input_data)
 
-model_directory = r'E:\Kuliah Semester 5\PMDPM\Unsupervised Learning (Praktek)\Tugas4_A_11840'
 model_path = {
-    "AGG_model" : os.path.join(model_directory, r'AGG_model.pkl'),
-    "KMeans_model" : os.path.join(model_directory, r'KMeans_model.pkl'),
-    "DBSCAN_model" : os.path.join(model_directory, r'DBSCAN_model.pkl'),
+    "AGG_model" : r'AGG_model.pkl',
+    "KMeans_model" : r'KMeans_model.pkl',
+    "DBSCAN_model" : r'DBSCAN_model.pkl',
 }
 
 models = {}
